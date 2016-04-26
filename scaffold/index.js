@@ -15,7 +15,7 @@ module.exports = function(){
 		alias: alias
 	};
 	var argv = minimist(process.argv.slice(2), opts);
-	console.dir(argv);
+	//console.dir(argv);
 
 	var action = argv.action;
 	var controller = argv.controller;
