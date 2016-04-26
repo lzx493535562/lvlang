@@ -1,7 +1,8 @@
 {
-  "name": "lvlang",
+  "name": "lingmao",
   "description": "",
-  "main": "",
+  "main": "[]",
+  "moduleType": [],
   "license": "MIT",
   "homepage": "",
   "ignore": [
@@ -12,6 +13,13 @@
     "tests"
   ],
   "dependencies": {
-    "react": "^15.0.1"
-  }
+    "cookie": "~1.1.0",
+    "angular": "~1.4.7",
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.8",
+    "requirejs": "~2.1.22"
+  },
+  "authors": [
+  ]
 }
