@@ -12,11 +12,13 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
+		growingCtrl:'./controller/growingCtrl',
 		companyListCtrl:'./controller/companyListCtrl',
 		homepageCtrl:'./controller/homepageCtrl',
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		growing:'./directive/script/growing',
 		bigTitle:'./directive/script/bigTitle',
 		footer:'./directive/script/footer',
 		footer:'./directive/script/footer',

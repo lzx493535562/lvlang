@@ -4,7 +4,8 @@ define(["angularRoute",
 	"app",
 	'testCtrl',
 	'companyListCtrl',
-	'homepageCtrl'
+	'homepageCtrl',
+	'growingCtrl'
 	],
 	function(__angularRoute,app){
 		var initRoute = function(){		
@@ -22,6 +23,10 @@ define(["angularRoute",
 					.when('/companyList',{
 						templateUrl:'view/companyList.html',
 						controller:'companyListCtrl'
+					})
+					.when('/growing',{
+						templateUrl:'view/growing.html',
+						controller:'growingCtrl'
 					})
 					.otherwise('/'); 
 				console.log("init route complete");
