@@ -2,8 +2,9 @@
 
 define(["angularRoute",
 	"app",
+	'testCtrl',
 	'companyListCtrl',
-	'testCtrl'
+	'homepageCtrl'
 	],
 	function(__angularRoute,app){
 		var initRoute = function(){		
@@ -13,6 +14,10 @@ define(["angularRoute",
 					.when("/",{
 						templateUrl:"view/test.html",
 						controller:"testCtrl"
+					})
+					.when("/homepage",{
+						templateUrl:"view/homepage.html",
+						controller:"homepageCtrl"
 					})
 					.when('/companyList',{
 						templateUrl:'view/companyList.html',
