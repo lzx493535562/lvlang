@@ -1,4 +1,7 @@
-<div class="pill">
-	<div ng-repeat="(i,n) in data">{{n}}{{i!=data.length?'>':''}}</div>
+<div class="pills">
+	<div ng-repeat="(i,n) in data">
+		<span ng-class="{'last':i==data.length-1}">{{n}}</span>
+		<span class="split" ng-class="{'last':i==data.length-1}">&gt;</span>
+	</div>
 </div>
 	

@@ -1,5 +1,8 @@
 
-define(['app','leftMenu'],function(app){
+define(['app',
+	'leftMenu',
+	'path'
+	],function(app){
 	app.directive('companyList',[function(){
 		return {
 			restrict:'E',
@@ -17,6 +20,8 @@ define(['app','leftMenu'],function(app){
 				};
 
 				scope.menuIndex = 2;
+
+				scope.pills = ['首页','公司简介','成员公司'];
 			}
 		};
 	}]);

@@ -1,8 +1,132 @@
+@import "../../less/colors.less";
 
 company-list{
 	display: block;
-	.main-logo{
-		width: 100%;
+	background-color: rgb(244,244,244);
+	overflow: auto;
+	left-menu{
+		float: left;
+		margin-left: 20%;
+		top: -120px;
+		z-index: 9999;
+		position: relative;
+	}
+	.main{
+		float: left;
+		width: 960px;
+		padding:  0 56px;
+		background-color: white;
+		font-family: "microsoft yahei";
+		path{
+			margin: 0 auto;
+		}
+
+		.title{	
+			&.title-member{
+				margin-top: 20px; 
+				margin-bottom: 45px;
+			}
+			&.title-branch{
+				margin-top: 40px; 
+				margin-bottom: 45px;
+				
+			}
+			.en{
+				margin-top: 20px;
+				font-size: 32px;
+				color: #aaa;
+			}
+			.cn{
+				margin-top: 8px;
+				font-size: 18px;
+				font-weight: 700;
+				color: rgb(110,110,110);
+
+				.green{
+					color:@main-color-darkgreen;
+				}
+			}
+		}
+
+		.list{
+			.item{
+				padding-top: 35px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #aaa;
+
+				img{
+					margin-top: -10px;
+					margin-bottom: 30px;
+				}
+
+				.text{
+					text-indent: 2em;
+					font-size: 18px;
+					line-height: 22px;
+					letter-spacing: 2px;
+					color: rgb(109,109,109);
+				}
+			}
+		}
+
+		.map-list{
+			margin-bottom: 82px;
+			overflow: auto;
+			table{
+				float: left;
+				tr{
+				}
+				td{
+					vertical-align: middle;
+					padding-left:20px;
+					text-align: left;
+					height: 40px;
+					border:1px solid #aaa;
+					border-left: none;
+					border-right: none;
+					&.first:first-child{
+						width: 155px;
+						border-right: 1px solid #aaa;
+					}
+					&.second{
+						width: 266px;
+					}
+
+					&.graybg{
+						background-color: rgb(244,244,244);
+					}
+
+					&.greenbg{
+						background-color: @main-color-darkgreen;
+						color: white;
+					}
+				}
+			}
+
+			.map{
+				float: left;
+				margin-left: 20px;
+				.graph{
+					width:390px;
+					height: 328px;
+					background-image: url('../image/companyList/mappoint.jpg');
+				}
+
+				.text{
+					width: 390px;
+					height: 68px;
+					padding-left: 30px;
+					padding-top: 10px;
+					 margin-top: 15px; 
+					font-size: 12px;
+					box-sizing: border-box;
+					background-color: rgb(244,244,244);
+					>div:first-child{
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
 	}
 }
 	
