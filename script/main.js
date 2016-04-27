@@ -17,10 +17,15 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		bigTitle:'./directive/script/bigTitle',
+		footer:'./directive/script/footer',
+		footer:'./directive/script/footer',
+		companyList:'./directive/script/companyList',
+		path:'./directive/script/path',
 		leftMenu:'./directive/script/leftMenu',
 		home:'./directive/script/home',
 		pager:'./directive/script/pager',
-		nav:'./directive/script/nav',
+		navbar:'./directive/script/navbar',
 		guide:'./directive/script/guide',
 		test:'./directive/script/test',
 
