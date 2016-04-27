@@ -1,5 +1,10 @@
 
-define(['app','companyList','guide','navbar'],function(app){
+define(['app',
+	'companyList',
+	'guide',
+	'navbar',
+	'footer'
+	],function(app){
 	app.controller('companyListCtrl',['$scope',function(scope){
 
 	}]);

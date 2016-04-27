@@ -17,6 +17,8 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		footer:'./directive/script/footer',
+		footer:'./directive/script/footer',
 		companyList:'./directive/script/companyList',
 		path:'./directive/script/path',
 		leftMenu:'./directive/script/leftMenu',
