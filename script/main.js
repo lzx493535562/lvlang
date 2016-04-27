@@ -17,6 +17,7 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		path:'./directive/script/path',
 		leftMenu:'./directive/script/leftMenu',
 		guide:'./directive/guide',
 		test:'./directive/script/test',
