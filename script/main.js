@@ -12,10 +12,12 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
-		homepageCtrl:'./controller/homepage',
+		companyListCtrl:'./controller/companyListCtrl',
+		homepageCtrl:'./controller/homepageCtrl',
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		leftMenu:'./directive/script/leftMenu',
 		home:'./directive/script/home',
 		pager:'./directive/script/pager',
 		nav:'./directive/script/nav',

@@ -1,0 +1,53 @@
+@import "../../less/colors.less";
+left-menu{
+	font-family: "microsoft yahei";
+	.title{
+		width: 244px;
+		height: 119px;
+		background-color: @main-color-green;
+		.box{
+			margin-top: 38px;
+			color:white;
+			float: right;
+			margin-right: 20px;
+			text-align: right;
+			.cn{	
+				font-size: 28px;
+			}
+			.en{
+				margin-top: 10px;
+				font-size: 19px;
+			}
+		}
+	}
+	.list{
+		width: 244px;
+		.item{
+			height: 64px;
+			line-height: 64px;
+			text-align: right;
+			padding-right: 20px;
+			border-bottom: 1px solid  #aaa;
+			color:rgb(201,201,201);
+			font-weight: 500;
+			.cn{
+				font-size: 18px;
+			}
+			.en{
+				font-size: 15px;
+				margin-right: 25px;
+			}
+			&.item-hot{
+				background-color: @main-color-bg;
+				.cn{
+					color:@main-color-darkgreen;
+				}
+				.en{
+					
+				}
+			}
+		}
+	}
+}
+
+	
