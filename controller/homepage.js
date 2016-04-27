@@ -1,8 +1,10 @@
 
 define(['app',
-		'directive-guide'
+		'guide',
+		'nav',
+		'home'
 	],function(app,test){
-	app.controller('homepageCtrlCtrl',['$scope',function(scope){
+	app.controller('homepageCtrl',['$scope',function($scope){
 
 	}]);
 });

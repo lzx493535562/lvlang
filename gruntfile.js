@@ -9,8 +9,8 @@ module.exports = function (grunt) {
 
 	grunt.initConfig({ 
 		watch: {  
-			livereload: {  
-				options: {  
+			livereload: { 
+ 				options: {  
 					livereload: '<%= connect.options.livereload %>'    
 				},  
 				files: [
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 		connect: {  
 			options: {  
 				port: 9001,  
-				livereload: 35731,  
+				livereload: 35736,  
 				// change this to '0.0.0.0' to access the server from outside  
 				hostname: 'localhost'  
 			},  

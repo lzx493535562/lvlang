@@ -1,0 +1,30 @@
+@import "../../less/colors.less";
+pager{
+	.page-box {
+		width:1200px;
+		height:40px;
+		line-height: 40px;
+		margin:0 auto;
+		text-align: center;
+		ul {
+			display:inline-block;
+			li {
+				float:left;
+				width:36px;
+				height:36px;
+				line-height: 36px;
+				text-align: center;
+				color:#999;
+				border:1px solid #dedede;
+				margin-right:10px;
+				cursor: pointer;
+			}
+			.current {
+				background-color:@main-color-darkgreen;
+				color:#fff;
+				border:none;
+			}
+		}
+	}
+}
+	
