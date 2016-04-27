@@ -1,7 +1,8 @@
 
 define(['app',
 	'leftMenu',
-	'path'
+	'path',
+	'bigTitle'
 	],function(app){
 	app.directive('companyList',[function(){
 		return {
@@ -22,6 +23,12 @@ define(['app',
 				scope.menuIndex = 2;
 
 				scope.pills = ['首页','公司简介','成员公司'];
+
+				scope.bigTitle ={
+					cn:'立即加入绿浪',
+					bigcn:'与我们一起开启数字商品新连接',
+					en:'IMMEDIATELY JOIN THE GREENSEA'
+				};
 			}
 		};
 	}]);
