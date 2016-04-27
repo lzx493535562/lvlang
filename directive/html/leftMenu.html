@@ -1,0 +1,14 @@
+<div>
+	<div class='title'>
+		<div class="box">
+			<div class="cn">{{data.title.cn}}</div>
+			<div class="en">{{data.title.en}}</div>
+		</div>
+	</div>
+	<div class="list">
+		<div class="item" ng-class="{'item-hot':index==i}" ng-repeat="(i,n) in data.list" >
+			<span class="en">{{n.en}}</span>
+			<span class="cn">{{n.cn}}</span>
+		</div>
+	</div>
+</div>
