@@ -1,0 +1,154 @@
+@import "../../less/colors.less";
+
+info-service{
+	display: block;
+	background-color: rgb(244,244,244);
+	overflow: auto;
+	overflow-x: hidden;
+	left-menu{
+		float: left;
+		margin-left: 20%;
+		top: -120px;
+		z-index: 9999;
+		position: relative;
+	}
+	.main{
+		float: left;
+		width: 960px;
+		padding:  0 56px;
+		background-color: white;
+		font-family: "microsoft yahei";
+		path{
+			margin: 0 auto;
+		}
+
+		.title{	
+			&.title-infoService{
+				margin-top: 20px; 
+				margin-bottom: 45px;
+			}
+			.en{
+				margin-top: 20px;
+				font-size: 32px;
+				color: #aaa;
+			}
+			.cn{
+				margin-top: 8px;
+				font-size: 18px;
+				font-weight: 700;
+				color: rgb(110,110,110);
+
+				.green{
+					color:@main-color-darkgreen;
+				}
+			}
+		}
+
+		.list{
+			.item{
+				padding-top: 40px;
+				border-top: 1px solid #ddd;
+				.title{
+					font-size: 28px;
+					font-weight: 700;
+					margin-bottom: 20px;
+				}
+				.tip{
+					padding-left: 25px;
+					color: #ddd;
+					font-size: 18px;
+				}
+				.content{
+					margin-top: 35px;
+					text-align: center;
+					margin-bottom: 80px;
+					.text{
+						display: inline-block;
+						.cn{
+							font-size: 38px;
+							span{
+								color:@main-color-darkgreen;
+							}
+						}
+						.en{
+							margin-top: 10px;
+							font-size: 14px;
+							color: #ddd;
+						}
+					}
+					.graph{
+						margin-top: 40px;
+						overflow: hidden;
+					}
+
+					&.content-professional{
+						.graph{
+							.box{
+								width: 50%;
+								float: left;
+								.text{
+									width: 45%;
+									margin-top: 25px;
+									.bigcn{
+										font-weight: 600;
+										font-size: 18px;
+										margin-right: 5px;
+									}
+									.cn{
+										font-size: 16px;
+									}
+								}
+							}
+						}
+					}
+
+					&.content-format{
+						.graph{
+							img{
+								margin: 0 17px;
+							}
+						}
+					}
+
+					&.content-demo{
+						.box{
+							img{
+
+							}
+						}
+					}
+
+					&.content-service{
+						.graph{
+							.box{
+								width: 50%;
+								float: left;
+							}
+							.text{
+								text-align: left;
+								display: block;
+								margin-top: 25px;
+								.bigcn{
+									font-weight: 600;
+									font-size: 18px;
+									margin-bottom: 10px;
+								}
+								.cn{
+									font-size: 16px;
+									line-height: 22px
+								}
+								&:first-child{
+									margin-top: 40px;
+								}
+							}
+						}
+					}
+
+				}
+			}
+		}
+
+
+	}
+}
+	

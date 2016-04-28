@@ -1,5 +1,9 @@
 
-define(['app'],function(app){
+define(['app',
+	'leftMenu',
+	'path',
+	'bigTitle'
+	],function(app){
 	app.directive('honor',[function(){
 		return {
 			restrict:'E',
