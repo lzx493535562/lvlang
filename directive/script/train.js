@@ -1,14 +1,10 @@
 
-define(['app',
-		'leftMenu',
-		'path',
-		'bigTitle'
-	],function(app){
-	app.directive('visualService',[function(){
+define(['app'],function(app){
+	app.directive('train',[function(){
 		return {
 			restrict:'E',
 			replace:false,
-			templateUrl:'../directive/html/visualService.html',
+			templateUrl:'../directive/html/train.html',
 			link:function(scope,elements,attrs){
 				scope.bigTitle = {
 					cn :'绿浪专注数字商品未来',
@@ -26,9 +22,9 @@ define(['app',
 					]
 				};
 
-				scope.menuIndex = 3;
+				scope.menuIndex = 4;
 
-				scope.pills = ['首页','主营业务','电商视觉服务'];
+				scope.pills = ['首页','主营业务','电商教育培训'];
 			}
 		};
 	}]);
