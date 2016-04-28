@@ -13,6 +13,8 @@ requirejs.config({
 
 		// controller
 		infoServiceCtrl:'./controller/infoServiceCtrl',
+		trainPageCtrl:'./controller/trainPageCtrl',
+		visualServicePageCtrl:'./controller/visualServicePageCtrl',
 		aboutusCtrl:'./controller/aboutusCtrl',
 		honorCtrl:'./controller/honorCtrl',
 		growingCtrl:'./controller/growingCtrl',
@@ -22,6 +24,8 @@ requirejs.config({
 
 		// directive
 		infoService:'./directive/script/infoService',
+		train:'./directive/script/train',
+		visualService:'./directive/script/visualService',
 		aboutus:'./directive/script/aboutus',
 		honor:'./directive/script/honor',
 		growing:'./directive/script/growing',
