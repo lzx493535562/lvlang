@@ -1,0 +1,83 @@
+@import "../../less/colors.less";
+
+aboutus{
+	display: block;
+	background-color: rgb(244,244,244);
+	overflow: auto;
+	overflow-x: hidden;
+	font-family: "microsoft yahei";
+	left-menu{
+		float: left;
+		margin-left: 20%;
+		top: -120px;
+		z-index: 9999;
+		position: relative;
+	}
+	.main{
+		float: left;
+		width: 960px;
+		padding:  0 56px;
+		background-color: white;
+		font-family: "microsoft yahei";
+		path{
+			margin: 0 auto;
+		}
+
+		.title{	
+			&.title-aboutus{
+				margin-top: 20px; 
+				margin-bottom: 45px;
+			}
+			.en{
+				margin-top: 20px;
+				font-size: 32px;
+				color: #aaa;
+			}
+			.cn{
+				margin-top: 8px;
+				font-size: 18px;
+				font-weight: 700;
+				color: rgb(110,110,110);
+
+				.green{
+					color:@main-color-darkgreen;
+				}
+			}
+		}
+
+		.article{
+			margin-bottom: 70px;
+			p{
+				text-indent: 2em;
+				font-size: 16px;
+				line-height: 25px;
+				margin-bottom: 10px;
+				color: #545454;
+				letter-spacing: 2px;
+			}
+		}
+
+		.img-list{
+			overflow: hidden;
+			text-align: center;
+			margin: 0 auto;
+			margin-bottom:30px;
+			width: 80%;
+			img{
+				float: left;
+				width: auto;
+				margin-left: 10px;
+				margin-bottom: 10px;
+			}
+		}
+
+		.logo-list{
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
+		
+	}
+}
+	

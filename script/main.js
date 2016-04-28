@@ -12,6 +12,7 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
+		aboutusCtrl:'./controller/aboutusCtrl',
 		honorCtrl:'./controller/honorCtrl',
 		growingCtrl:'./controller/growingCtrl',
 		companyListCtrl:'./controller/companyListCtrl',
@@ -19,6 +20,7 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		aboutus:'./directive/script/aboutus',
 		honor:'./directive/script/honor',
 		growing:'./directive/script/growing',
 		bigTitle:'./directive/script/bigTitle',
