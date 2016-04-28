@@ -7,7 +7,8 @@ define(["angularRoute",
 	'homepageCtrl',
 	'visualServicePageCtrl',
 	'growingCtrl',
-	'honorCtrl'
+	'honorCtrl',
+	'aboutusCtrl'
 	],
 	function(__angularRoute,app){
 		var initRoute = function(){		
@@ -15,7 +16,7 @@ define(["angularRoute",
 				console.log("init route...");
 				$routeProvider
 					.when("/",{
-						templateUrl:"view/test.html",
+						templateUrl:"view/aboutus.html",
 						controller:"testCtrl"
 					})
 					.when("/homepage",{
@@ -37,6 +38,10 @@ define(["angularRoute",
 					.when('/honor',{
 						templateUrl:'view/honor.html',
 						controller:'honorCtrl'
+					})
+					.when('/aboutus',{
+						templateUrl:'view/aboutus.html',
+						controller:'aboutusCtrl'
 					})
 					.otherwise('/'); 
 				console.log("init route complete");

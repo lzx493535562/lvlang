@@ -13,6 +13,7 @@ requirejs.config({
 
 		// controller
 		visualServicePageCtrl:'./controller/visualServicePageCtrl',
+		aboutusCtrl:'./controller/aboutusCtrl',
 		honorCtrl:'./controller/honorCtrl',
 		growingCtrl:'./controller/growingCtrl',
 		companyListCtrl:'./controller/companyListCtrl',
@@ -21,6 +22,7 @@ requirejs.config({
 
 		// directive
 		visualService:'./directive/script/visualService',
+		aboutus:'./directive/script/aboutus',
 		honor:'./directive/script/honor',
 		growing:'./directive/script/growing',
 		bigTitle:'./directive/script/bigTitle',
