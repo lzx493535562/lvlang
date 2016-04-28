@@ -1,47 +1,45 @@
 @import "../../less/colors.less";
 home{
-	.padd {
-		height:200px;
-	}
 	.banner {
 		min-width:1200px;
-		height:614px;
-		background-image:url("../../image/home/banner_01.png");
-		background-repeat:no-repeat;
-		background-size:100%;
-		position: relative;
-	}
-	.smallbanner {
-		position: absolute;
-		bottom:20px;
-		left:20%;
-		text-align: center;
-		ul {
-			display: inline-block;
-			li {
-				float:left;
-				width:293px;
-				height:85px;
-				background-color:#fff;
-				margin-right:15px;
-				padding:15px;
-				.smbanner-left {
+		img {
+			width:100%;
+			height:100%;
+			position: relative;
+		}
+		.smallbanner {
+			width:1014px;
+			position: absolute;
+			left:357px;
+			top:560px;
+			text-align: center;
+			ul {
+				display: inline-block;
+				li {
 					float:left;
-				}
-				.smbanner-right {
-					float:left;
-					width:190px;
-					padding-left:10px;
-					.sm-title {
-						font-size:16px;
-						font-weight:bold;
-						color:#606060;
-						margin-bottom:10px;
+					width:293px;
+					height:85px;
+					background-color:#fff;
+					margin-right:15px;
+					padding:15px;
+					.smbanner-left {
+						float:left;
 					}
-					.sm-text {
-						font-size: 12px;
-						line-height: 20px;
-						color:#767676;
+					.smbanner-right {
+						float:left;
+						width:190px;
+						padding-left:10px;
+						.sm-title {
+							font-size:16px;
+							font-weight:bold;
+							color:#606060;
+							margin-bottom:10px;
+						}
+						.sm-text {
+							font-size: 12px;
+							line-height: 20px;
+							color:#767676;
+						}
 					}
 				}
 			}
@@ -60,17 +58,26 @@ home{
 				line-height:20px;
 			}
 			.cn {
+				margin:20px 0;
 				ul {
 					display:inline-block;
 					li {
 						float:left;
-						margin:0 10px;
+						margin:0 3px;
 						span {
 							color:@main-color-green;
 						}
 					}
 					.news-title {
+						font-size:26px;
 						font-weight: bold;
+						color:#2d251e;
+					}
+					.line {
+						width:70px;
+						height:3px;
+						background-color:#f1f1f1;
+						margin-top:10px;
 					}
 				}
 			}
@@ -109,6 +116,12 @@ home{
 						font-size:12px;
 						color:#d1d1d1;
 						line-height:20px;
+					}
+					.bottom-text {
+						font-size:16px;
+						font-weight:bold;
+						margin-top: 24px;
+						margin-bottom:90px;
 					}
 				}
 				.no-mar-right {
@@ -217,6 +230,7 @@ home{
 				text-align: left;
 				font-size: 14px;
 				color: #999;
+				text-align: center;
 				margin-top:20px;
 				line-height: 26px;
 				margin-bottom:124px;
@@ -227,25 +241,33 @@ home{
 		}
 	}
 	.assets {
-		position: relative;
+		
+		width:100%;
+		min-width:1200px;
+		margin:0 auto;
 		.assets-img {
 			text-align: center;
 			ul {
+				position: relative;
 				display: inline-block;
 				li {
 					float: left;
+					img {
+						width:500px;
+						height:auto;
+
+					}
 				}
 				.assets-right {
-					float:left;
-					margin-left:250px;
+					margin-left:200px;
 				}
 			}
 		}
 		.assets-text {
 			display: inline-block;
 			position: absolute;
-			top:50%;
-			left:24%;
+			top:90px;
+			left:110px;
 			.assets-text-box {
 				float:left;
 				width:420px;
@@ -277,7 +299,41 @@ home{
 		background-image: url("../../image/home/slash.png");
 	}
 	.video-list {
-		height:800px;
+		height:500px;
+	}
+	.lvlang-info {
+		margin-top:45px;
+		margin-bottom:35px;
+		.lvlang-title {
+			font-size: 18px;
+			font-weight: bold;
+			color:@main-color-green;
+			margin-bottom:36px;
+			text-align: center;
+		}
+		.lvlang-text {
+			font-size: 14px;
+			line-height: 26px;
+			color:#999;
+			text-align: center;
+		}
+	}
+	.prompt-line {
+		text-align: center;
+		margin:3px 0 39px 0;
+		ul {
+			display: inline-block;
+			li {
+				float:left;
+				width:58px;
+				height:3px;
+				background-color:#dadada;
+				margin-right:10px;
+			}
+			.current {
+				background-color:@main-color-green;
+			}
+		}
 	}
 }
 	
