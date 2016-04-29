@@ -1,9 +1,9 @@
 @import "../../less/colors.less";
-visual-service{
+talent{
 	display: block;
 	background-color: rgb(244,244,244);
 	overflow: auto;
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 	font-family: "microsoft yahei";
 	.wrap {
 		    width: 1200px;
@@ -58,52 +58,35 @@ visual-service{
 			}
 		}
 		.article{
-			margin-bottom: 70px;
-			p{
-				text-indent: 2em;
-				font-size: 16px;
-				line-height: 25px;
-				color: #545454;
-				letter-spacing: 2px;
+			.split-line {
+				width:100%;
+				height:1px;
+				border-top:1px solid #f1f1f1;				
+				margin-bottom:40px;
 			}
-			.brand-text {
-				margin-bottom: 64px;
-				margin-top:62px;
-
-			}
-			.text-title {
-				font-size:18px;
-				font-weight: bold;
-				margin-bottom:20px;
-			}
-			.text-bottom {
-				margin-bottom:38px;
-			}
-		}
-		.position-img {
-			width:842px;
-			height:238px;
-			margin:0 auto;
-			margin-bottom:58px;
-		}
-		.position-text {
-			.position-title {
-				font-size:18px;
-				font-weight: bold;
-				margin-bottom:20px;
-			}
-			.position-detail {
-				p {
-					color:#999;
-					line-height: 26px;
+			.idea-box {
+				margin-bottom:30px;
+				.idea-title {
+					font-size:18px;
+					color:@main-color-green;
+				}
+				.line {
+					width:45px;
+					height:1px; 
+					border-top:2px solid @main-color-green;
+					margin-bottom:10px;
+					margin-top:5px;
+				}
+				.idea-text {
+					font-size: 12px;
+					line-height: 20px;
+					color:#333;
+					.text-bold, span{
+						font-weight: bold;
+						color:#333;
+					}
 				}
 			}
-		}
-		.steps-img {
-			text-align: center;
-			margin-bottom: 64px;
-			margin-top:47px;
-			
 		}
 	}
 }
