@@ -12,6 +12,7 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
+		joinUsPageCtrl:'./controller/joinUsPageCtrl',
 		infoServiceCtrl:'./controller/infoServiceCtrl',
 		trainPageCtrl:'./controller/trainPageCtrl',
 		visualServicePageCtrl:'./controller/visualServicePageCtrl',
@@ -23,6 +24,7 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		joinUs:'./directive/script/joinUs',
 		infoService:'./directive/script/infoService',
 		train:'./directive/script/train',
 		visualService:'./directive/script/visualService',
