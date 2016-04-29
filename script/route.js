@@ -12,7 +12,7 @@ define(["angularRoute",
 	'newsCenterPageCtrl',
 	'growingCtrl',
 	'honorCtrl',
-	'infoServiceCtrl',
+	'eduCtrl',
 	'aboutusCtrl'
 	],
 	function(__angularRoute,app){
@@ -64,9 +64,9 @@ define(["angularRoute",
 						templateUrl:'view/aboutus.html',
 						controller:'aboutusCtrl'
 					})
-					.when('/infoService',{
-						templateUrl:'view/infoService.html',
-						controller:'infoServiceCtrl'
+					.when('/edu',{
+						templateUrl:'view/edu.html',
+						controller:'eduCtrl'
 					})
 					.otherwise('/'); 
 				console.log("init route complete");
