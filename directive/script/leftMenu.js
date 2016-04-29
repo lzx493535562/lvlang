@@ -1,6 +1,6 @@
 
 define(['app'],function(app){
-	app.directive('leftMenu',[function(){
+	app.directive('leftMenu',['$location',function($location){
 		return {
 			restrict:'E',
 			scope:{
@@ -12,6 +12,11 @@ define(['app'],function(app){
 			link:function(scope,elements,attrs){
 				console.log(scope.data);
 				console.log(scope.index);
+
+
+				scope.linkTo = function(index){
+					$location.path(scope.data.list[index].url);
+				};
 			}
 		};
 	}]);
