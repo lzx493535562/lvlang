@@ -14,7 +14,7 @@ requirejs.config({
 		// controller
 		talentPageCtrl:'./controller/talentPageCtrl',
 		joinUsPageCtrl:'./controller/joinUsPageCtrl',
-		infoServiceCtrl:'./controller/infoServiceCtrl',
+		eduCtrl:'./controller/eduCtrl',
 		trainPageCtrl:'./controller/trainPageCtrl',
 		visualServicePageCtrl:'./controller/visualServicePageCtrl',
 		aboutusCtrl:'./controller/aboutusCtrl',
@@ -27,7 +27,7 @@ requirejs.config({
 		// directive
 		talent:'./directive/script/talent',
 		joinUs:'./directive/script/joinUs',
-		infoService:'./directive/script/infoService',
+		edu:'./directive/script/edu',
 		train:'./directive/script/train',
 		visualService:'./directive/script/visualService',
 		aboutus:'./directive/script/aboutus',

@@ -4,11 +4,11 @@ define(['app',
 	'path',
 	'bigTitle'
 	],function(app){
-	app.directive('infoService',[function(){
+	app.directive('edu',[function(){
 		return {
 			restrict:'E',
 			replace:false,
-			templateUrl:'../directive/html/infoService.html',
+			templateUrl:'../directive/html/edu.html',
 			link:function(scope,elements,attrs){
 				scope.menuList = {
 					title:{cn:'主营业务',en:'MAIN BUSINESS'}, 

@@ -1,11 +1,11 @@
 
 define(['app',
-	'infoService',
+	'edu',
 	'guide',
 	'navbar',
 	'footer'
 	],function(app,test){
-	app.controller('infoServiceCtrl',['$scope',function(scope){
+	app.controller('eduCtrl',['$scope',function(scope){
 
 	}]);
 });
