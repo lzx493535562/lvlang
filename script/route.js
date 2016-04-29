@@ -8,6 +8,7 @@ define(["angularRoute",
 	'visualServicePageCtrl',
 	'trainPageCtrl',
 	'joinUsPageCtrl',
+	'talentPageCtrl',
 	'growingCtrl',
 	'honorCtrl',
 	'infoServiceCtrl',
@@ -37,6 +38,10 @@ define(["angularRoute",
 					.when('/joinUsPage',{
 						templateUrl:"view/joinUsPage.html",
 						controller:"joinUsPageCtrl"
+					})
+					.when('/talentPage',{
+						templateUrl:"view/talentPage.html",
+						controller:"talentPageCtrl"
 					})
 					.when('/companyList',{
 						templateUrl:'view/companyList.html',

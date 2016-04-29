@@ -1,0 +1,93 @@
+@import "../../less/colors.less";
+talent{
+	display: block;
+	background-color: rgb(244,244,244);
+	overflow: auto;
+	/*overflow-x: hidden;*/
+	font-family: "microsoft yahei";
+	.wrap {
+		    width: 1200px;
+		    margin: 0 auto;
+	}
+	.banner {
+		img {
+			width:100%;
+			height:100%;
+		}
+	}
+	left-menu{
+		float: left;
+		/*margin-left: 20%;*/
+		top: -120px;
+		z-index: 9999;
+		position: relative;
+	}
+	.main{
+		float: left;
+		width: 800px;
+		padding:  0 56px;
+		background-color: white;
+		font-family: "microsoft yahei";
+		path{
+			margin: 0 auto;
+		}
+		.title{	
+			&.title-today{
+				margin-top: 20px; 
+				margin-bottom: 45px;
+			}
+			&.title-branch{
+				margin-top: 40px; 
+				margin-bottom: 45px;
+				
+			}
+			.en{
+				margin-top: 20px;
+				font-size: 32px;
+				color: #aaa;
+			}
+			.cn{
+				margin-top: 8px;
+				font-size: 18px;
+				font-weight: 700;
+				color: rgb(110,110,110);
+
+				.green{
+					color:@main-color-darkgreen;
+				}
+			}
+		}
+		.article{
+			.split-line {
+				width:100%;
+				height:1px;
+				border-top:1px solid #f1f1f1;				
+				margin-bottom:40px;
+			}
+			.idea-box {
+				margin-bottom:30px;
+				.idea-title {
+					font-size:18px;
+					color:@main-color-green;
+				}
+				.line {
+					width:45px;
+					height:1px; 
+					border-top:2px solid @main-color-green;
+					margin-bottom:10px;
+					margin-top:5px;
+				}
+				.idea-text {
+					font-size: 12px;
+					line-height: 20px;
+					color:#333;
+					.text-bold, span{
+						font-weight: bold;
+						color:#333;
+					}
+				}
+			}
+		}
+	}
+}
+	
