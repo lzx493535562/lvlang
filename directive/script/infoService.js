@@ -13,21 +13,22 @@ define(['app',
 				scope.menuList = {
 					title:{cn:'主营业务',en:'MAIN BUSINESS'}, 
 					list:[
-						{cn:'商品数据服务', en:'SERVICE'},
-						{cn:'在线教育内容制作', en:'EDU'},
-						{cn:'视觉服务', en:'VISUAL SERVICE'},
-						{cn:'成长之路', en:'GROWTH PATH'}
+						{cn:'商品数据采集', en:'COLLECT'},
+						{cn:'商品数据管理', en:'MANA'},
+						{cn:'在线教育制作', en:'EDU'},
+						{cn:'电商视觉服务', en:'SERVICES'},
+						{cn:'电商教育培训', en:'TRAIN'}
 					]
 				};
 
-				scope.menuIndex = 0;
+				scope.menuIndex = 2;
 
-				scope.pills = ['首页','主营业务','商品数据采集'];
+				scope.pills = ['首页','主营业务','在线教育内容操作'];
 
 				scope.bigTitle ={
-					cn:'立即加入绿浪',
-					bigcn:'与我们一起开启数字商品新连接',
-					en:'IMMEDIATELY JOIN THE GREENSEA'
+					cn:'绿浪专注数字商品未来',
+					bigcn:'开启数字商品新连接',
+					en:'NEW CONNECTION OF DIGITAL GOODS'
 				};
 				
 			}

@@ -12,6 +12,7 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
+		newsCenterPageCtrl:'./controller/newsCenterPageCtrl',
 		talentPageCtrl:'./controller/talentPageCtrl',
 		joinUsPageCtrl:'./controller/joinUsPageCtrl',
 		infoServiceCtrl:'./controller/infoServiceCtrl',
@@ -25,6 +26,7 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		newsCenter:'./directive/script/newsCenter',
 		talent:'./directive/script/talent',
 		joinUs:'./directive/script/joinUs',
 		infoService:'./directive/script/infoService',
@@ -46,6 +48,7 @@ requirejs.config({
 		test:'./directive/script/test',
 
 		// service
+		newsService:'./service/newsService',
 		testService:'./service/testService',
 
 		// end tail
