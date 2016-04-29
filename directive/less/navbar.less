@@ -22,11 +22,12 @@ navbar{
 					a {
 						padding-bottom:5px;
 						color:@main-color-text;
+						&.current,&:hover {
+							border-bottom:2px solid @main-color-green;
+							color:@main-color-green;
+						}
+						
 					}
-				}
-				.current {
-					border-bottom:2px solid @main-color-green;
-					color:@main-color-green;
 				}
 			}
 		}

@@ -13,10 +13,10 @@ define(['app',
 				scope.menuList = {
 					title:{cn:'公司简介',en:'COMPANY PROFILE'}, 
 					list:[
-						{cn:'关于绿浪', en:'ABOUT US'},
-						{cn:'公司荣誉', en:'HONORS'},
-						{cn:'成员公司', en:'MEMBERS'},
-						{cn:'成长之路', en:'GROWTH PATH'}
+						{cn:'关于绿浪', en:'ABOUT US',url:'/aboutus'},
+						{cn:'公司荣誉', en:'HONORS',url:'/honor'},
+						{cn:'成员公司', en:'MEMBERS',url:'/companyList'},
+						{cn:'成长之路', en:'GROWTH PATH',url:'/growing'}
 					]
 				};
 

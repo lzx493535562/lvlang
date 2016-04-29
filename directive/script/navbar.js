@@ -6,7 +6,16 @@ define(['app'],function(app){
 			replace:false,
 			templateUrl:'../directive/html/navbar.html',
 			link:function(scope,elements,attrs){
-				
+				scope.index = attrs.index;
+
+				scope.data = [
+					{value:'#/homepage',text:'网站首页'},
+					{value:'#/aboutus',text:'关于绿浪'},
+					{value:'#/news',text:'新闻中心'},
+					{value:'#/infoService',text:'主营业务'},
+					{value:'#/idea',text:'人才发展'}
+					// {value:'',text:'企业愿景'},
+				];
 			}
 		};
 	}]);

@@ -6,7 +6,7 @@
 		</div>
 	</div>
 	<div class="list">
-		<div class="item" ng-class="{'item-hot':index==i}" ng-repeat="(i,n) in data.list" >
+		<div class="item" ng-class="{'item-hot':index==i}" ng-repeat="(i,n) in data.list" ng-click="linkTo(i)" >
 			<span class="en">{{n.en}}</span>
 			<span class="cn">{{n.cn}}</span>
 		</div>
