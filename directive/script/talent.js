@@ -14,8 +14,8 @@ define(['app'],function(app){
 				scope.menuList = {
 					title:{cn:'人才发展',en:'TALENT DEVELOPMENT'}, 
 					list:[
-						{cn:'人才理念', en:'TALENT IDEA'},
-						{cn:'招聘岗位', en:'RECRUITMENT'},
+						{cn:'人才理念', en:'TALENT IDEA', url:'/talentPage'},
+						{cn:'招聘岗位', en:'RECRUITMENT', url:'/joinUsPage'},
 					]
 				};
 

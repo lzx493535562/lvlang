@@ -16,6 +16,7 @@ define(['app'],function(app){
 
 				scope.linkTo = function(index){
 					$location.path(scope.data.list[index].url);
+					scope.Index = scope.data.list[index].newsIndex;
 				};
 			}
 		};

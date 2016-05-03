@@ -1,10 +1,15 @@
 <div class="page-box">
 	<ul>
-		<li class="current">1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>...</li>
-		<li>8</li>
+		<div class="prev-btn btn" ng-class="{'disable':pageIndex==0}" ng-click="pagePrev()"> < 上一页</div>
+		<div class="dot" ng-show="isShowHeadDots" ng-click="pageUp()">...</div>
+
+		<li ng-repeat="i in pageIndexs" ng-click="changePageIndex(i)" ng-class="{'current':i==pageIndex}">{{i+1}}</li>
+
+		<div class="next-btn btn" ng-click="pageNext()" ng-class="{'disable':pageIndex>=pageCount-1}">下一页 ></div>
+		<div class="dot" ng-show="isShowTailDots" ng-click="pageDown()">...</div>
+		<div class="page-count">
+			共{{pageCount}}页，到第<input class="pagenumb" type="text"  ng-keydown="keydown" ng-model="inputPageIndex" />页
+		</div>
+		<div class="confirm btn" ng-click="changePageIndex()">确定</div>
 	</ul>
 </div>
-	
