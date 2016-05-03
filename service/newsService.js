@@ -35,7 +35,7 @@ define(['app'],function(app){
 					data:{
 						classifyId:classifyId,//1=>集团动态2=>业务动态3=>行业动态4=>通知动态
 						pageSize:pageSize,
-						pageIndex:pageIndex
+						page:pageIndex
 					}
 				});
 			};

@@ -35,17 +35,22 @@ define(['app',
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){
-					newsService.newsClassify($scope.menuList.list.newsIndex,$scope.pageSize,$scope.pageIndex)
+					newsService.newsClassify(1,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
 						$scope.newsData = data;
 						console.log("datacanter",data);
-						$scope.totalCount = data.length;
-						$scope.pageCount = Math.floor(($scope.totalCount + ($scope.pageSize - 1)) / $scope.pageSize);
-					})
+						$scope.$emit('afterSearch',data);
+					});
 				};
 
-				$scope.newsClassify();
+				$scope.$on('afterSearch',function(e,args){
+					var totalCount = args.count;
+					$scope.pageCount = Math.floor((totalCount + ($scope.pageSize - 1)) / $scope.pageSize);
+				});
 				
+				$scope.$on('pageIndexChanged',function(e,args){
+					$scope.newsClassify();
+				});
 				//点击左右箭头 上下翻页
 				function setCurrPage(index){
 					return Math.max(Math.min($scope.pageCount-1,index),0);
