@@ -1,6 +1,8 @@
 
-define(['app'],function(app){
-	app.directive('home',[function(){
+define(['app',
+		'newsService'
+	],function(app){
+	app.directive('home',['newsService',function(newsService){
 		return {
 			restrict:'E',
 			replace:false,
@@ -12,6 +14,27 @@ define(['app'],function(app){
 					bigcn:'全渠道零售下的商品数据服务',
 					en:'COMMODITY DATA SERVICES UNDER FULL CHANNEL RETAILING'
 				};
+
+				//获取近三月新闻
+				scope.newsMoths = function(){
+					newsService.newsMonths()
+					.success(function(data){
+						console.log("newsmonth",data);
+						scope.newsMonthsData = data;
+					})
+				};
+
+				//获取6条新闻
+				scope.newsList = function(){
+					newsService.newsList()
+					.success(function(data){
+						console.log("newsList",data);
+						scope.newsListData = data;
+					})
+				};
+
+				scope.newsMoths();
+				scope.newsList();
 			}
 		};
 	}]);

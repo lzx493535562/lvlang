@@ -14,52 +14,23 @@
 		</div>
 		<div class="article">
 			<div class="news-list">
-				<div class="news-box">
+				<div class="news-box" ng-repeat ="d in newsData">
 					<div class="news-img">
-						<img src="../../image/newsCenter/news_01.png">
+						<img ng-src="{{d.imgurl}}">
 					</div>
 					<div class="news-text">
-						<p class="text-title">浙江省。。。</p>
+						<p class="text-title">
+							<span class="title">{{d.title}} </span>
+							<span class="time">{{d.pTime}}</span>
+						</p>
 						<div class="text-info">
-							2015年5月26日、、、、、
-						</div>
-					</div>
-				</div>
-				<div class="news-box">
-					<div class="news-img">
-						<img src="../../image/newsCenter/news_01.png">
-					</div>
-					<div class="news-text">
-						<p class="text-title">浙江省。。。</p>
-						<div class="text-info">
-							2015年5月26日、、、、、
-						</div>
-					</div>
-				</div>
-				<div class="news-box">
-					<div class="news-img">
-						<img src="../../image/newsCenter/news_01.png">
-					</div>
-					<div class="news-text">
-						<p class="text-title">浙江省。。。</p>
-						<div class="text-info">
-							2015年5月26日、、、、、
-						</div>
-					</div>
-				</div>
-				<div class="news-box">
-					<div class="news-img">
-						<img src="../../image/newsCenter/news_01.png">
-					</div>
-					<div class="news-text">
-						<p class="text-title">浙江省。。。</p>
-						<div class="text-info">
-							2015年5月26日、、、、、
+							{{d.content}}
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<pager></pager>
 	</div>
 </div>
 	

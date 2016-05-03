@@ -129,6 +129,9 @@ home{
 				}
 			}
 		}
+		.video-img {
+			cursor: pointer;
+		}
 		.news-date {
 			margin-top:40px;
 			display: inline-block;
@@ -181,14 +184,19 @@ home{
 						border-bottom:1px dotted #ebebeb;
 						.point {
 							float: left;
-							width:4px;
-							height:4px;
+							width:5px;
+							height:5px;
 							background-color:@main-color-green;
 							display:inline-block;
-							margin:20px 10px 0 0 ;
+							margin:18px 10px 0 0 ;
 						}
 						.news-dis {
 							float:left;
+							width:400px;
+							text-align: left;
+							overflow: hidden;
+							text-overflow:ellipsis;
+							white-space:nowrap;
 						}
 						.date {
 							float:right;
@@ -299,7 +307,10 @@ home{
 		background-image: url("../../image/home/slash.png");
 	}
 	.video-list {
-		height:500px;
+		video {
+			width:760px;
+			height:466px;
+		}
 	}
 	.lvlang-info {
 		margin-top:45px;
