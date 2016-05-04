@@ -62,7 +62,7 @@ define(['app',
 				$scope.newsId = $routeParams.newsId;
 
 				$scope.newsDetail = function(){
-					if($scope.newsId=='undefined'){return;};
+					if($scope.newsId===undefined){return;};
 					newsService.newsDetail($scope.newsId)
 					.success(function(data){
 						console.log("detail",data);
