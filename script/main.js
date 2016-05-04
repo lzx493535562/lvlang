@@ -8,6 +8,8 @@ requirejs.config({
 		angularRoute:"bower_components/angular-route/angular-route.min",
 		angularSanitize:"bower_components/angular-sanitize/angular-sanitize.min",
 
+		underscore:"bower_components/underscore/underscore-min",
+
 		// base
 		app:'./script/app',
 		route:'./script/route',
