@@ -18,8 +18,11 @@
     "underscore": "~1.8.3",
     "jquery": "~2.1.4",
     "angular-route": "~1.4.8",
-    "requirejs": "~2.1.22"
+    "requirejs": "~2.1.22",
+    "angular-sanitize": "^1.5.5"
   },
-  "authors": [
-  ]
+  "authors": [],
+  "resolutions": {
+    "angular": "1.5.5"
+  }
 }

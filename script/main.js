@@ -6,6 +6,7 @@ requirejs.config({
 	paths: {
 		angular:'bower_components/angular/angular',
 		angularRoute:"bower_components/angular-route/angular-route.min",
+		angularSanitize:"bower_components/angular-sanitize/angular-sanitize.min",
 
 		// base
 		app:'./script/app',
@@ -64,7 +65,8 @@ requirejs.config({
 	},
   　　	//加载顺序规则
 	shim:{
-		angularRoute:["angular"]
+		angularRoute:["angular"],
+		angularSanitize:["angular"]
 	}
 });
 // 开始逻辑. 加载依赖模块
