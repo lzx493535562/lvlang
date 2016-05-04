@@ -12,6 +12,9 @@ requirejs.config({
 		route:'./script/route',
 
 		// controller
+		noticePageCtrl:'./controller/noticePageCtrl',
+		businessPageCtrl:'./controller/businessPageCtrl',
+		industryPageCtrl:'./controller/industryPageCtrl',
 		infoServiceCtrl:'./controller/infoServiceCtrl',
 		newsCenterPageCtrl:'./controller/newsCenterPageCtrl',
 		talentPageCtrl:'./controller/talentPageCtrl',
@@ -27,6 +30,9 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		business:'./directive/script/business',
+		industry:'./directive/script/industry',
+		notice:'./directive/script/notice',
 		infoService:'./directive/script/infoService',
 		newsCenter:'./directive/script/newsCenter',
 		talent:'./directive/script/talent',
