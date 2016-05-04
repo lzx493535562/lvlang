@@ -6,12 +6,16 @@ requirejs.config({
 	paths: {
 		angular:'bower_components/angular/angular',
 		angularRoute:"bower_components/angular-route/angular-route.min",
+		angularSanitize:"bower_components/angular-sanitize/angular-sanitize.min",
 
 		// base
 		app:'./script/app',
 		route:'./script/route',
 
 		// controller
+		noticePageCtrl:'./controller/noticePageCtrl',
+		businessPageCtrl:'./controller/businessPageCtrl',
+		industryPageCtrl:'./controller/industryPageCtrl',
 		infoServiceCtrl:'./controller/infoServiceCtrl',
 		newsCenterPageCtrl:'./controller/newsCenterPageCtrl',
 		talentPageCtrl:'./controller/talentPageCtrl',
@@ -27,6 +31,9 @@ requirejs.config({
 		testCtrl:'./controller/testCtrl',
 
 		// directive
+		business:'./directive/script/business',
+		industry:'./directive/script/industry',
+		notice:'./directive/script/notice',
 		infoService:'./directive/script/infoService',
 		newsCenter:'./directive/script/newsCenter',
 		talent:'./directive/script/talent',
@@ -59,7 +66,8 @@ requirejs.config({
 	},
   　　	//加载顺序规则
 	shim:{
-		angularRoute:["angular"]
+		angularRoute:["angular"],
+		angularSanitize:["angular"]
 	}
 });
 // 开始逻辑. 加载依赖模块

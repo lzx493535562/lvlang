@@ -1,13 +1,13 @@
 
 define(['app',
 		'pager',
-		'newsService'
+		'newsService',
 	],function(app){
-	app.directive('newsCenter',["newsService",function(newsService){
+	app.directive('industry',["newsService",function(newsService){
 		return {
 			restrict:'E',
 			replace:false,
-			templateUrl:'../directive/html/newsCenter.html',
+			templateUrl:'../directive/html/industry.html',
 			link:function($scope,$elements,$attrs){
 				$scope.pageIndex = 0;
 				$scope.pageCount = 0;
@@ -29,13 +29,13 @@ define(['app',
 					]
 				};
 
-				$scope.menuIndex = 0;
+				$scope.menuIndex = 2;
 
-				$scope.pills = ['首页','新闻中心','集团动态'];
+				$scope.pills = ['首页','新闻中心','行业动态'];
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){
-					newsService.newsClassify(1,$scope.pageSize,$scope.pageIndex+1)
+					newsService.newsClassify(3,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
 						$scope.newsData = data;
 						console.log("datacanter",data);

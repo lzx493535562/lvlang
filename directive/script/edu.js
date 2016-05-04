@@ -13,11 +13,11 @@ define(['app',
 				scope.menuList = {
 					title:{cn:'主营业务',en:'MAIN BUSINESS'}, 
 					list:[
-						{cn:'商品数据采集', en:'COLLECT'},
-						{cn:'商品数据管理', en:'MANA'},
-						{cn:'在线教育制作', en:'EDU'},
-						{cn:'电商视觉服务', en:'SERVICES'},
-						{cn:'电商教育培训', en:'TRAIN'}
+						{cn:'商品数据采集', en:'COLLECT', url:'/'},
+						{cn:'商品数据管理', en:'MANA', url:'/'},
+						{cn:'在线教育制作', en:'EDU', url:'/'},
+						{cn:'电商视觉服务', en:'SERVICES', url:'/'},
+						{cn:'电商教育培训', en:'TRAIN', url:'/'}
 					]
 				};
 
