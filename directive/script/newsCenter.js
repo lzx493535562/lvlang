@@ -7,7 +7,8 @@ define(['app',
 	'conService',
 	'newsService'
 	],function(app){
-	app.directive('newsCenter',["newsService",'conService','$location',function(newsService,conService,$location){
+	app.directive('newsCenter',["newsService",'conService','$location','$routeParams',
+		function(newsService,conService,$location,$routeParams){
 		return {
 			restrict:'E',
 			replace:false,
@@ -20,9 +21,6 @@ define(['app',
 				var menu = conService.getMenu('news_center');
 				$scope.menuList = {title: menu.title, list: menu.list };
 				$scope.bigTitle = menu.bigTitle;
-
-							
-
 
 				$scope.menuIndex = 0;
 
@@ -59,9 +57,29 @@ define(['app',
 					newsService.newsDetail(id)
 					.success(function(data){
 						console.log("detail",data);
+						$scope.newsCenterDetailInfo = data.content;
+						$(".main").html($scope.newsCenterDetailInfo);
 					});
-					//$location.path('/homepage');
 				};
+
+				//从首页跳转新闻中心
+				$scope.newsId = $routeParams.newsId;
+
+				$scope.newsDetail = function(){
+					if($scope.newsId=='undefined'){return;};
+					newsService.newsDetail($scope.newsId)
+					.success(function(data){
+						console.log("detail",data);
+						$scope.detailData = data;
+						$scope.newsDetailInfo = data.content;
+						$scope.classifyId = data.classifyId-0;
+						$scope.menuIndex = $scope.classifyId-1;
+
+						$(".main").html($scope.newsDetailInfo);
+					});
+				};
+
+				$scope.newsDetail();
 
 				$scope.$on('afterSearch',function(e,args){
 					var totalCount = args.count;

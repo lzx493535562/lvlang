@@ -2,7 +2,7 @@
 define(['app',
 		'newsService'
 	],function(app){
-	app.directive('home',['newsService',function(newsService){
+	app.directive('home',['newsService',"$location",function(newsService,$location){
 		return {
 			restrict:'E',
 			replace:false,
@@ -35,11 +35,8 @@ define(['app',
 
 				//新闻详细信息
 				scope.linkToNewsDetail = function(id){
-					var id = id-0;
-					newsService.newsDetail(id)
-					.success(function(data){
-						console.log("detail",data);
-					});
+					var newsId = id-0;
+					$location.path("/newsCenterPage/"+newsId);
 				};
 
 				scope.newsMoths();

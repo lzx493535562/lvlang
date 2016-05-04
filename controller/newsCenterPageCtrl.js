@@ -4,7 +4,7 @@ define(['app',
 	'navbar',
 	'newsCenter',
 	'footer'],function(app,test){
-	app.controller('newsCenterPageCtrl',['$scope',function(scope){
+	app.controller('newsCenterPageCtrl',['$scope',function($scope){
 
 	}]);
 });

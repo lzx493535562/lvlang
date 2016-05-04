@@ -48,7 +48,7 @@ define(["angularRoute",
 						templateUrl:"view/talentPage.html",
 						controller:"talentPageCtrl"
 					})
-					.when('/newsCenterPage',{
+					.when('/newsCenterPage/:newsId?',{
 						templateUrl:"view/newsCenterPage.html",
 						controller:"newsCenterPageCtrl"
 					})
