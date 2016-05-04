@@ -62,46 +62,46 @@
 			<table>
 				<tr>
 					<td class="first">上海分公司</td>
-					<td class="second">上海零猫信息技术有限公司</td>
+					<td class="second mapname" ng-click="map('shlm')" ng-class="{'greenbg':currComp=='shlm'}">上海零猫信息技术有限公司</td>
 				</tr>
 				<tr>
 					<td class="first">杭州分公司</td>
-					<td>杭州绿浪网络科技有限公司</td>
+					<td class="mapname" ng-class="{'greenbg':currComp=='hzll'}" ng-click="map('hzll')">杭州绿浪网络科技有限公司</td>
 				</tr>
 				<tr>
-					<td rowspan="5" class="first graybg">嘉兴总公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;</td>
-					<td class="greenbg">浙江绿浪信息技术有限公司&nbsp;&nbsp;&gt;</td>
+					<td rowspan="5" class="first">嘉兴总公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td class="mapname" ng-click="map('zjll')" ng-class="{'greenbg':currComp=='zjll'}">浙江绿浪信息技术有限公司&nbsp;&nbsp;</td>
 				</tr>
 				<tr>
-					<td>嘉兴掌心通讯科技有限公司</td>
+					<td class="mapname" ng-click="map('jxzx')" ng-class="{'greenbg':currComp=='jxzx'}">嘉兴掌心通讯科技有限公司</td>
 				</tr>
 				<tr>
-					<td>嘉兴云图信息科技有限公司</td>
+					<td class="mapname" ng-click="map('jxyt')" ng-class="{'greenbg':currComp=='jxyt'}">嘉兴云图信息科技有限公司</td>
 				</tr>
 				<tr>
-					<td>嘉兴东臣信息科技有限公司</td>
+					<td class="mapname" ng-click="map('jxdc')" ng-class="{'greenbg':currComp=='jxdc'}">嘉兴东臣信息科技有限公司</td>
 				</tr>
 				<tr>
-					<td>嘉兴东软软件培训学校</td>
+					<td class="mapname" ng-click="map('jxdr')" ng-class="{'greenbg':currComp=='jxdr'}">嘉兴东软软件培训学校</td>
 				</tr>
 				<tr>
 					<td class="first">南京分公司</td>
-					<td>南京掌心文化传媒有限公司</td>
+					<td class="mapname" ng-click="map('njzx')" ng-class="{'greenbg':currComp=='njzx'}">南京掌心文化传媒有限公司</td>
 				</tr>
 				<tr>
 					<td class="first">台州分公司</td>
-					<td>台州星星绿浪信息技术有限公司</td>
+					<td class="mapname" ng-click="map('tzxx')" ng-class="{'greenbg':currComp=='tzxx'}">台州星星绿浪信息技术有限公司</td>
 				</tr>
 				<tr>
 					<td class="first">北京分公司</td>
-					<td>北京办事处</td>
+					<td class="mapname" ng-click="map('bjbsc')" ng-class="{'greenbg':currComp=='bjbsc'}">北京办事处</td>
 				</tr>
 			</table>
 			<div class="map">
-				<div class="graph"></div>
+				<div id="mapCanvas" class="graph"></div>
 				<div class="text">
 					<div>电话:&nbsp;&nbsp;400-000-9411</div>
-					<div>地址:&nbsp;&nbsp;浙江省嘉兴市昌盛南路36号嘉兴智慧产业创新园1号楼6楼</div>
+					<div>地址:&nbsp;&nbsp;{{info.keyword}}</div>
 
 				</div>
 			</div>

@@ -5,7 +5,7 @@ define(['app'],function(app){
 			return 'lingmall scaffolding version 0.1.0';
 		};
 
-		var newsServiceUrl = 'http://192.168.1.152:8010';
+		var newsServiceUrl = 'http://192.168.1.241:8010';
 
 		var urlDict = {
 			newsClassify:'/article/articleList',
