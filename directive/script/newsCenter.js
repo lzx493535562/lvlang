@@ -7,7 +7,8 @@ define(['app',
 	'conService',
 	'newsService'
 	],function(app){
-	app.directive('newsCenter',["newsService",'conService',function(newsService,conService){
+	app.directive('newsCenter',["newsService",'conService','$location','$routeParams',
+		function(newsService,conService,$location,$routeParams){
 		return {
 			restrict:'E',
 			replace:false,
@@ -21,22 +22,64 @@ define(['app',
 				$scope.menuList = {title: menu.title, list: menu.list };
 				$scope.bigTitle = menu.bigTitle;
 
-							
-
-
 				$scope.menuIndex = 0;
 
-				$scope.pills = ['首页','新闻中心','集团动态'];
+				$scope.pills = ['首页','新闻中心','公司动态'];
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){
 					newsService.newsClassify(1,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
-						$scope.newsData = data;
-						console.log("datacanter",data);
-						$scope.$emit('afterSearch',data);
+						var formatData = format(data);
+						$scope.newsData = formatData.list;
+						//console.log("datacanter",data);
+						$scope.$emit('afterSearch',formatData);
+					});
+
+					function format(data){
+						var list =[];
+						for(var key in data){
+							if(/\d+/.test(key)){
+								list.push(data[key]);
+							}
+						}
+						var count = data.count;
+						return {
+							list:list,
+							count:count
+						};
+					}
+				};
+
+				//获取新闻详细信息
+				$scope.linkToNewsDetail = function(newsId){
+					var id = newsId-0;
+					newsService.newsDetail(id)
+					.success(function(data){
+						console.log("detail",data);
+						$scope.newsCenterDetailInfo = data.content;
+						$(".main").html($scope.newsCenterDetailInfo);
 					});
 				};
+
+				//从首页跳转新闻中心
+				$scope.newsId = $routeParams.newsId;
+
+				$scope.newsDetail = function(){
+					if($scope.newsId===undefined){return;};
+					newsService.newsDetail($scope.newsId)
+					.success(function(data){
+						console.log("detail",data);
+						$scope.detailData = data;
+						$scope.newsDetailInfo = data.content;
+						$scope.classifyId = data.classifyId-0;
+						$scope.menuIndex = $scope.classifyId-1;
+
+						$(".main").html($scope.newsDetailInfo);
+					});
+				};
+
+				$scope.newsDetail();
 
 				$scope.$on('afterSearch',function(e,args){
 					var totalCount = args.count;

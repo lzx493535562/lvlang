@@ -9,13 +9,13 @@
 		<div class="title title-today">
 			<div class="en">GROUP</div>
 			<div class="cn">
-				<span>通知</span><span class="green">公告</span>
+				<span>媒体</span><span class="green">报道</span>
 			</div>
 		</div>
 		<div class="article">
 			<div class="news-list">
 				<div class="news-box" ng-repeat ="d in newsData">
-					<div class="news-img" ng-click="linkToNewsPage()">
+					<div class="news-img curp" ng-click="linkToNewsDetail(d.id)">
 						<img ng-src="{{d.imgurl}}">
 					</div>
 					<div class="news-text">
@@ -23,8 +23,8 @@
 							<span class="title">{{d.title}} </span>
 							<span class="time">{{d.pTime}}</span>
 						</p>
-						<div class="text-info" ng-click="linkToNewsPage()">
-							{{d.content}}
+						<div class="text-info curp" ng-click="linkToNewsDetail(d.id)">
+							{{d.pContent}}
 						</div>
 					</div>
 				</div>

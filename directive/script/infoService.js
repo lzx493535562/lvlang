@@ -17,7 +17,7 @@ define(['app',
 
 				scope.menuIndex = 0;
 
-				scope.pills = ['首页','主营业务','商品数据采集'];
+				scope.pills = ['首页','主营业务','商品数据服务'];
 
 				
 			}

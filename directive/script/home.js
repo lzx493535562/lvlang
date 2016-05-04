@@ -2,7 +2,7 @@
 define(['app',
 		'newsService'
 	],function(app){
-	app.directive('home',['newsService',function(newsService){
+	app.directive('home',['newsService',"$location",function(newsService,$location){
 		return {
 			restrict:'E',
 			replace:false,
@@ -19,7 +19,7 @@ define(['app',
 				scope.newsMoths = function(){
 					newsService.newsMonths()
 					.success(function(data){
-						console.log("newsmonth",data);
+						//console.log("newsmonth",data);
 						scope.newsMonthsData = data;
 					})
 				};
@@ -28,9 +28,15 @@ define(['app',
 				scope.newsList = function(){
 					newsService.newsList()
 					.success(function(data){
-						console.log("newsList",data);
+						//console.log("newsList",data);
 						scope.newsListData = data;
 					})
+				};
+
+				//新闻详细信息
+				scope.linkToNewsDetail = function(id){
+					var newsId = id-0;
+					$location.path("/newsCenterPage/"+newsId);
 				};
 
 				scope.newsMoths();

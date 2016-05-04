@@ -2,16 +2,17 @@
 home{
 	.banner {
 		min-width:1200px;
+		height:620px;
+		position: relative;
 		img {
 			width:100%;
 			height:100%;
-			position: relative;
 		}
 		.smallbanner {
 			width:1014px;
 			position: absolute;
-			left:357px;
-			top:560px;
+			left:13%;
+			bottom:50px;
 			text-align: center;
 			ul {
 				display: inline-block;
@@ -150,6 +151,7 @@ home{
 					display: inline-block;
 					border:1px solid #ebebeb;
 					ul {
+						display: inline-block;
 						li {
 							float:left;
 							width:196px;
@@ -168,6 +170,16 @@ home{
 							border-top:3px solid @main-color-green;
 							background-color:#fff;
 							margin-top:-2px;
+						}
+					}
+					.news-detail {
+						font-size: 12px;
+						text-align: left;
+						padding-left:20px;
+						cursor: pointer;
+						img {
+							width:100px;
+							height:100px;							
 						}
 					}
 				}
@@ -197,6 +209,7 @@ home{
 							overflow: hidden;
 							text-overflow:ellipsis;
 							white-space:nowrap;
+							cursor: pointer;
 						}
 						.date {
 							float:right;
