@@ -32,10 +32,25 @@ define(['app',
 				$scope.newsClassify = function(){
 					newsService.newsClassify(1,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
-						$scope.newsData = data;
+						var formatData = format(data);
+						$scope.newsData = formatData.list;
 						//console.log("datacanter",data);
-						$scope.$emit('afterSearch',data);
+						$scope.$emit('afterSearch',formatData);
 					});
+
+					function format(data){
+						var list =[];
+						for(var key in data){
+							if(/\d+/.test(key)){
+								list.push(data[key]);
+							}
+						}
+						var count = data.count;
+						return {
+							list:list,
+							count:count
+						};
+					}
 				};
 
 				//获取新闻详细信息
