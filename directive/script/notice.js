@@ -1,9 +1,13 @@
 
 define(['app',
-		'pager',
-		'newsService'
+	'leftMenu',
+	'path',
+	'bigTitle',
+	'pager',
+	'conService',
+	'newsService'
 	],function(app){
-	app.directive('notice',["newsService",function(newsService){
+	app.directive('notice',["newsService",'conService',function(newsService,conService){
 		return {
 			restrict:'E',
 			replace:false,
@@ -14,20 +18,10 @@ define(['app',
 				$scope.pageSize = 6;
 
 
-				$scope.bigTitle = {
-					cn :'绿浪深耕电商领域',
-					bigcn:'发现数字商品未来与机遇',
-					en:'DIGITAL COMMODITIES IN THE FUTURE AND OPPORTUNITIES',
-				};
-				$scope.menuList = {
-					title:{cn:'新闻中心',en:'NEWS CENTER'}, 
-					list:[
-						{cn:'集团动态', en:'GROUP', url : '/newsCenterPage'},
-						{cn:'业务动态', en:'BUSINESS', url :'/businessPage'},
-						{cn:'行业动态', en:'INDUSTRY', url : '/industryPage'},
-						{cn:'通知公告', en:'NOTICE', url : '/noticePage'}
-					]
-				};
+				var menu = conService.getMenu('news_center');
+				$scope.menuList = {title: menu.title, list: menu.list };
+				$scope.bigTitle = menu.bigTitle;
+
 
 				$scope.menuIndex = 3;
 
