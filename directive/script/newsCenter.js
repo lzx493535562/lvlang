@@ -3,7 +3,7 @@ define(['app',
 		'pager',
 		'newsService'
 	],function(app){
-	app.directive('newsCenter',["newsService",function(newsService){
+	app.directive('newsCenter',["newsService",'$location',function(newsService,$location){
 		return {
 			restrict:'E',
 			replace:false,
@@ -38,9 +38,19 @@ define(['app',
 					newsService.newsClassify(1,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
 						$scope.newsData = data;
-						console.log("datacanter",data);
+						//console.log("datacanter",data);
 						$scope.$emit('afterSearch',data);
 					});
+				};
+
+				//获取新闻详细信息
+				$scope.linkToNewsDetail = function(newsId){
+					var id = newsId-0;
+					newsService.newsDetail(id)
+					.success(function(data){
+						console.log("detail",data);
+					});
+					//$location.path('/homepage');
 				};
 
 				$scope.$on('afterSearch',function(e,args){
