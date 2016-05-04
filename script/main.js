@@ -50,6 +50,7 @@ requirejs.config({
 		test:'./directive/script/test',
 
 		// service
+		conService:'./service/conService',
 		newsService:'./service/newsService',
 		testService:'./service/testService',
 
