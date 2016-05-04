@@ -26,7 +26,7 @@ define(['app',
 
 				$scope.menuIndex = 0;
 
-				$scope.pills = ['首页','新闻中心','集团动态'];
+				$scope.pills = ['首页','新闻中心','公司动态'];
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){

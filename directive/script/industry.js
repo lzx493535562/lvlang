@@ -19,7 +19,7 @@ define(['app',
 				$scope.bigTitle = menu.bigTitle;
 
 
-				$scope.menuIndex = 2;
+				$scope.menuIndex = 1;
 
 				$scope.pills = ['首页','新闻中心','行业动态'];
 

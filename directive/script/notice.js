@@ -23,9 +23,9 @@ define(['app',
 				$scope.bigTitle = menu.bigTitle;
 
 
-				$scope.menuIndex = 3;
+				$scope.menuIndex = 2;
 
-				$scope.pills = ['首页','新闻中心','通知公告'];
+				$scope.pills = ['首页','新闻中心','媒体报道'];
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){

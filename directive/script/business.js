@@ -18,7 +18,7 @@ define(['app',
 				$scope.bigTitle = menu.bigTitle;
 				$scope.menuList = {title:menu.title, list:menu.list};
 
-				$scope.menuIndex = 1;
+				$scope.menuIndex = 3;
 
 				$scope.pills = ['首页','新闻中心','业务动态'];
 

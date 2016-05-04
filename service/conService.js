@@ -27,10 +27,10 @@ define(['app'],function(app){
 			dict['news_center'] = {
 				title:{cn:'新闻中心',en:'NEWS CENTER'}, 
 				list:[
-					{cn:'集团动态', en:'GROUP', url : '/newsCenterPage'},
-					{cn:'业务动态', en:'BUSINESS', url :'/businessPage'},
+					{cn:'公司动态', en:'GROUP', url : '/newsCenterPage'},
 					{cn:'行业动态', en:'INDUSTRY', url : '/industryPage'},
-					{cn:'通知公告', en:'NOTICE', url : '/noticePage'}
+					{cn:'媒体报道', en:'MEDIA', url : '/noticePage'},
+					{cn:'业务动态', en:'BUSINESS', url :'/businessPage'}
 				],
 				bigTitle:{
 					cn :'绿浪深耕电商领域',
