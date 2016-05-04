@@ -8,6 +8,8 @@ requirejs.config({
 		angularRoute:"bower_components/angular-route/angular-route.min",
 		angularSanitize:"bower_components/angular-sanitize/angular-sanitize.min",
 
+		bmap:'http://api.map.baidu.com/api?v=1.5&ak=G5L3cNuRjXK2oEvSmpbbWOX9L0qwoYAr',
+
 		underscore:"bower_components/underscore/underscore-min",
 
 		// base
