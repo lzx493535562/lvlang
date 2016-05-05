@@ -42,7 +42,7 @@ define(['app',
 				scope.newsMoths();
 				scope.newsList();
 
-
+				//轮播图
 				scope.lunboIndex = 0;
 				scope.imageList = ['banner_02.png','banner_03.png','banner_04.png'];
 				var lunboInterval = 3000;
@@ -57,6 +57,13 @@ define(['app',
 				};
 
 				scope.lunbo(0);
+
+				//进入对应新闻页面
+				scope.linkToNewsPage = function(path){
+					$location.path(path);
+				};
+				
+
 			}
 		};
 	}]);
