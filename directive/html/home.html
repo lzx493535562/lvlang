@@ -66,32 +66,32 @@
 	<div class="news-img">
 		<ul>
 			<li>
-				<div class="">
-					<img src="../../image/home/news_01.png">
+				<div class="img-box">
+					<img src="../../image/home/公司动态.png">
 				</div>
-				<div class="img-cn-text">集团动态</div>
+				<div class="img-cn-text">公司动态</div>
 				<div class="img-en-text">GROUP NEWS</div>
 			</li>
 			<li>
-				<div class="">
-					<img src="../../image/home/news_02.png">
-				</div>
-				<div class="img-cn-text">业务动态</div>
-				<div class="img-en-text">BUSINESS NEWS</div>
-			</li>
-			<li>
-				<div class="">
-					<img src="../../image/home/news_03.png">
+				<div class="img-box">
+					<img src="../../image/home/行业动态.jpg">
 				</div>
 				<div class="img-cn-text">行业动态</div>
 				<div class="img-en-text">INDUSTRY NEWS</div>
 			</li>
-			<li class="no-mar-right">
-				<div class="">
-					<img src="../../image/home/news_04.png">
+			<li>
+				<div class="img-box">
+					<img src="../../image/home/媒体报道.png">
 				</div>
-				<div class="img-cn-text">通知公告</div>
-				<div class="img-en-text">NOTICE</div>
+				<div class="img-cn-text">媒体报道</div>
+				<div class="img-en-text"> MEDIA</div>
+			</li>
+			<li class="no-mar-right">
+				<div class="img-box">
+					<img src="../../image/home/业务动态.jpg">
+				</div>
+				<div class="img-cn-text">业务动态</div>
+				<div class="img-en-text">BUSINESS NEWS</div>
 			</li>
 		</ul>
 	</div>
@@ -102,11 +102,11 @@
 				<ul>
 					<li ng-class="{'current':showIndex==0}" ng-click="showIndex=0">2015年10月新闻</li>
 					<li ng-class="{'current':showIndex==1}" ng-click="showIndex=1">2015年09月新闻</li>
-					<li ng-class="{'current':showIndex==2}" ng-click="showIndex=2">2015年08月新闻</li>
+					<li ng-class="{'current':showIndex==2}" ng-click="showIndex=2" class="no-border-right">2015年08月新闻</li>
 				</ul>
-				<div class="news-detail" ng-show="showIndex==0" ng-bind-html="newsMonthsData[0].content" ng-click="linkToNewsDetail(newsMonthsData[0].id)"></div>
-				<div class="news-detail" ng-show="showIndex==1" ng-bind-html="newsMonthsData[1].content" ng-click="linkToNewsDetail(newsMonthsData[1].id)"></div>
-				<div class="news-detail" ng-show="showIndex==2" ng-bind-html="newsMonthsData[2].content" ng-click="linkToNewsDetail(newsMonthsData[2].id)"></div>
+				<div class="news-detail" ng-show="showIndex==0" ng-bind-html="newsMonthsData[0].pContent" ng-click="linkToNewsDetail(newsMonthsData[0].id)"></div>
+				<div class="news-detail" ng-show="showIndex==1" ng-bind-html="newsMonthsData[1].pContent" ng-click="linkToNewsDetail(newsMonthsData[1].id)"></div>
+				<div class="news-detail" ng-show="showIndex==2" ng-bind-html="newsMonthsData[2].pContent" ng-click="linkToNewsDetail(newsMonthsData[2].id)"></div>
 			</div>
 		</div>
 		<div class="all-news">
@@ -199,19 +199,19 @@
 	<div class="news-img video-img" ng-init="showImgIndex=0">
 		<ul>
 			<li>
-				<img ng-click="showImgIndex=0" src="../../image/home/bottom_01.png">
+				<img ng-click="showImgIndex=0" src="../../image/home/video_01.png">
 				<div class="bottom-text">零猫供应商篇</div>
 			</li>
 			<li>
-				<img ng-click="showImgIndex=1" src="../../image/home/bottom_02.png">
+				<img ng-click="showImgIndex=1" src="../../image/home/video_02.png">
 				<div class="bottom-text">零猫零售商篇</div>
 			</li>
 			<li>
-				<img ng-click="showImgIndex=2" src="../../image/home/bottom_03.png">
+				<img ng-click="showImgIndex=2" src="../../image/home/video_03.png">
 				<div class="bottom-text">绿浪嘉兴公司</div>
 			</li>
 			<li class="no-mar-right">
-				<img ng-click="showImgIndex=3" src="../../image/home/bottom_04.png">
+				<img ng-click="showImgIndex=3" src="../../image/home/video_04.png">
 				<div class="bottom-text">绿浪台州公司</div>
 			</li>
 		</ul>

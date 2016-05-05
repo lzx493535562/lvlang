@@ -19,7 +19,7 @@ define(['app',
 				scope.newsMoths = function(){
 					newsService.newsMonths()
 					.success(function(data){
-						//console.log("newsmonth",data);
+						console.log("newsmonth",data);
 						scope.newsMonthsData = data;
 					})
 				};
@@ -28,7 +28,7 @@ define(['app',
 				scope.newsList = function(){
 					newsService.newsList()
 					.success(function(data){
-						//console.log("newsList",data);
+						console.log("newsList",data);
 						scope.newsListData = data;
 					})
 				};

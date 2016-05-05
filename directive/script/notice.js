@@ -29,7 +29,7 @@ define(['app',
 
 				// 获取新闻分类
 				$scope.newsClassify = function(){
-					newsService.newsClassify(4,$scope.pageSize,$scope.pageIndex+1)
+					newsService.newsClassify(3,$scope.pageSize,$scope.pageIndex+1)
 					.success(function(data){
 						var formatData = format(data);
 						$scope.newsData = formatData.list;
