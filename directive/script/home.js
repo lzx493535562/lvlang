@@ -41,6 +41,22 @@ define(['app',
 
 				scope.newsMoths();
 				scope.newsList();
+
+
+				scope.lunboIndex = 0;
+				scope.imageList = ['banner_02.png','banner_03.png','banner_04.png'];
+				var lunboInterval = 3000;
+				var t;
+				scope.lunbo = function(index){
+					clearTimeout(t);
+					scope.lunboIndex = index;
+					t = setInterval(function(){
+						scope.lunboIndex  = (scope.lunboIndex+1)%scope.imageList.length;
+						scope.$apply();
+					},lunboInterval);
+				};
+
+				scope.lunbo(0);
 			}
 		};
 	}]);

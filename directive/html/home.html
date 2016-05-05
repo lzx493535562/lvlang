@@ -1,22 +1,8 @@
 <div class="banner">
-	<img src="../../image/home/banner_01.png">
-	<!-- <ul class="imgbox">
-		<li>
-			<img src="../../image/home/banner_01.png" id="showpic">
-		</li>
-		<li>
-			<img src="../../image/home/banner_02.png">
-		</li>
-		<li>
-			<img src="../../image/home/banner_03.png">
-		</li>
-		<li>
-			<img src="../../image/home/banner_04.png">
-		</li>
-	</ul> -->
+	<img  ng-src="../../image/home/{{imageList[lunboIndex]}}">
 	<div class="smallbanner">
 		<ul>
-			<li>
+			<li ng-click="lunbo(0)">
 				<div class="smbanner-left">
 					<img src="../../image/home/smallbanner_01.png">
 				</div>
@@ -25,7 +11,7 @@
 					<div class="sm-text">成本最优化，商品信息有序化，项目实施专业化.</div>
 				</div>
 			</li>
-			<li>
+			<li ng-click="lunbo(1)">
 				<div class="smbanner-left">
 					<img src="../../image/home/smallbanner_02.png">
 				</div>
@@ -34,7 +20,7 @@
 					<div class="sm-text">权限管理，多格式管理，参数更新，包装更新.</div>
 				</div>
 			</li>
-			<li>
+			<li ng-click="lunbo(2)">
 				<div class="smbanner-left">
 					<img src="../../image/home/smallbanner_03.png">
 				</div>
