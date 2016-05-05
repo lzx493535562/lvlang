@@ -161,10 +161,10 @@
 		<div class="bott-text">开启数字商品新连接</div>
 	</div>
 	<div class="video-list">
-		<video src="../../video/supplier.mp4" controls="controls" ng-show="showImgIndex==0"></video>
-		<video src="../../video/retailers.mp4" controls="controls" ng-show="showImgIndex==1"></video>
-		<video src="../../video/jiaxing.mp4" controls="controls" ng-show="showImgIndex==2"></video>
-		<video src="../../video/taizhou.mp4" controls="controls" ng-show="showImgIndex==3"></video>
+		<video src="../../video/supplier.mp4" controls="controls" ng-show="showImgIndex==0" poster="../../image/home/video_01.png"></video>
+		<video src="../../video/retailers.mp4" controls="controls" ng-show="showImgIndex==1" poster="../../image/home/video_02.png"></video>
+		<video src="../../video/jiaxing.mp4" controls="controls" ng-show="showImgIndex==2" poster="../../image/home/video_03.png"></video>
+		<video src="../../video/taizhou.mp4" controls="controls" ng-show="showImgIndex==3" poster="../../image/home/video_04.png"></video>
 	</div>
 	<!-- <div class="lvlang-info">
 		<div class="lvlang-title">浙江绿浪信息技术有限公司</div>
@@ -185,19 +185,19 @@
 	<div class="news-img video-img" ng-init="showImgIndex=0">
 		<ul>
 			<li>
-				<img ng-click="showImgIndex=0" src="../../image/home/video_01.jpg">
+				<img ng-click="showVideoIndex(0)" src="../../image/home/video_01.jpg">
 				<div class="bottom-text">零猫供应商篇</div>
 			</li>
 			<li>
-				<img ng-click="showImgIndex=1" src="../../image/home/video_02.jpg">
+				<img ng-click="showVideoIndex(1)" src="../../image/home/video_02.jpg">
 				<div class="bottom-text">零猫零售商篇</div>
 			</li>
 			<li>
-				<img ng-click="showImgIndex=2" src="../../image/home/video_03.jpg">
+				<img ng-click="showVideoIndex(2)" src="../../image/home/video_03.jpg">
 				<div class="bottom-text">绿浪嘉兴公司</div>
 			</li>
 			<li class="no-mar-right">
-				<img ng-click="showImgIndex=3" src="../../image/home/video_04.jpg">
+				<img ng-click="showVideoIndex(3)" src="../../image/home/video_04.jpg">
 				<div class="bottom-text">绿浪台州公司</div>
 			</li>
 		</ul>
