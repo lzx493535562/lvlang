@@ -1,5 +1,6 @@
 @import "../../less/colors.less";
 guide{
+	font-family: "微软雅黑";
 	.curp {
 		cursor: pointer;
 	}
@@ -11,6 +12,7 @@ guide{
 			height:30px;
 			line-height: 30px;
 			margin:0 auto;
+			position: relative;
 			.guide-text {
 				float:right;
 				color:#ddd;
@@ -18,6 +20,27 @@ guide{
 				li {
 					float:left;
 					cursor: pointer;
+					margin-right:10px;
+				}
+			}
+			.site-box {
+				width:105px;
+				border:1px solid #ddd;
+				text-align: center;
+				background-color:#fff;
+				position:absolute;
+				top:28px;
+				right:53px;
+				z-index: 2;
+				ul {
+					li {
+						border-bottom:1px solid #ddd;
+						a {
+							text-align: center;
+							color:#333;
+							display: inline-block;
+						}
+					}
 				}
 			}
 		}

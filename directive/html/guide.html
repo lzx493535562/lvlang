@@ -2,8 +2,24 @@
 	<div class="content">
 		<ul class="guide-text">
 			<li>引导页&nbsp;|&nbsp;</li>
-			<li>旗下网站入口&nbsp;|&nbsp;</li>
+			<li ng-mouseover="showSiteBox=true" ng-mouseout="showSiteBox=false">旗下网站入口&nbsp;|&nbsp;</li>
 			<li>英文</li>
-		</ul>		
+		</ul>
+		<div class="site-box" ng-show="showSiteBox==true" ng-mouseover="showSiteBox=true" ng-mouseout="showSiteBox=false">
+			<ul>
+				<li>
+					<a href="http://www.lingmall.com" target="_blank">上海零猫</a>
+				</li>
+				<li>
+					<a href="http://www.greenes.taobao.com" target="_blank">绿浪网拍</a>
+				</li>
+				<li>
+					<a href="http://dongcheng999.com" target="_blank">东臣科技</a>
+				</li>
+				<li>
+					<a href="http://zxinadmin.12580gogo.com" target="_blank">掌心互动</a>
+				</li>
+			</ul>
+		</div>		
 	</div>
 </div>
