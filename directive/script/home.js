@@ -66,9 +66,16 @@ define(['app',
 				//更换视频
 				scope.showVideoIndex = function(index){
 					scope.showImgIndex = index;
+
 					var media = document.getElementsByTagName("video");
-					console.log("media",media);
-					media.paused = true;
+
+					if(media[index].paused){
+						media[index].play();
+					}else{
+						media[index].pause();
+					}
+
+					//
 				}
 
 			}
