@@ -86,13 +86,25 @@
 			<div class="news-text">近期新闻</div>
 			<div class="news-box" ng-init="showIndex=0">
 				<ul>
-					<li ng-class="{'current':showIndex==0}" ng-click="showIndex=0">2015年10月新闻</li>
-					<li ng-class="{'current':showIndex==1}" ng-click="showIndex=1">2015年09月新闻</li>
-					<li ng-class="{'current':showIndex==2}" ng-click="showIndex=2" class="no-border-right">2015年08月新闻</li>
+					<li ng-class="{'current':showIndex==0}" ng-click="showIndex=0">{{newsMonthsData[0].pTime}}</li>
+					<li ng-class="{'current':showIndex==1}" ng-click="showIndex=1">{{newsMonthsData[1].pTime}}</li>
+					<li ng-class="{'current':showIndex==2}" ng-click="showIndex=2" class="no-border-right">{{newsMonthsData[2].pTime}}</li>
 				</ul>
-				<div class="news-detail" ng-show="showIndex==0" ng-bind-html="newsMonthsData[0].pContent" ng-click="linkToNewsDetail(newsMonthsData[0].id)"></div>
-				<div class="news-detail" ng-show="showIndex==1" ng-bind-html="newsMonthsData[1].pContent" ng-click="linkToNewsDetail(newsMonthsData[1].id)"></div>
-				<div class="news-detail" ng-show="showIndex==2" ng-bind-html="newsMonthsData[2].pContent" ng-click="linkToNewsDetail(newsMonthsData[2].id)"></div>
+				<div class="news-detail" ng-show="showIndex==0">
+					<div class="detail-title">{{newsMonthsData[0].title}}</div>
+					<div class="detail-content">{{newsMonthsData[0].pContent}}</div>
+					<div class="seeMore" ng-click="linkToNewsDetail(newsMonthsData[0].id)">查看详情 >></div>
+				</div>
+				<div class="news-detail" ng-show="showIndex==1">
+					<div class="detail-title">{{newsMonthsData[1].title}}</div>
+					<div class="detail-content">{{newsMonthsData[1].pContent}}</div>
+					<div class="seeMore" ng-click="linkToNewsDetail(newsMonthsData[1].id)">查看详情 >></div>
+				</div>
+				<div class="news-detail" ng-show="showIndex==2">
+					<div class="detail-title">{{newsMonthsData[2].title}}</div>
+					<div class="detail-content">{{newsMonthsData[2].pContent}}</div>
+					<div class="seeMore" ng-click="linkToNewsDetail(newsMonthsData[2].id)">查看详情 >></div>
+				</div>
 			</div>
 		</div>
 		<div class="all-news">

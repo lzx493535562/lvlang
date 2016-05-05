@@ -2,7 +2,7 @@
 define(['app',
 		'newsService'
 	],function(app){
-	app.directive('home',['newsService',"$location",function(newsService,$location){
+	app.directive('home',['newsService',"$location","$filter",function(newsService,$location,$filter){
 		return {
 			restrict:'E',
 			replace:false,
@@ -72,7 +72,7 @@ define(['app',
 					if(media[index].paused){
 						media[index].play();
 					}else{
-						media[index].pause();
+						//media[index].pause();
 					}
 
 					//
