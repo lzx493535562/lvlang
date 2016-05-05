@@ -25,7 +25,7 @@ define(["angularRoute",
 				console.log("init route...");
 				$routeProvider
 					.when("/",{
-						templateUrl:"view/aboutus.html",
+						templateUrl:"view/homepage.html",
 						controller:"testCtrl"
 					})
 					.when("/homepage",{
