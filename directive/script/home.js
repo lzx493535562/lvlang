@@ -67,15 +67,13 @@ define(['app',
 				scope.showVideoIndex = function(index){
 					scope.showImgIndex = index;
 
-					var media = document.getElementsByTagName("video");
 
-					if(media[index].paused){
-						media[index].play();
-					}else{
-						//media[index].pause();
-					}
+					var videoList = $('.video-list video');
+					videoList.each(function(i,n){
+						n.pause();
+					});
+					videoList.eq(index)[0].play();
 
-					//
 				}
 
 			}
