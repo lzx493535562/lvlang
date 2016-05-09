@@ -44,14 +44,33 @@ define(['app',
 
 				//轮播图
 				scope.lunboIndex = 0;
-				scope.imageList = ['banner_02.png','banner_03.png','banner_04.png'];
+				scope.imageList = ['banner_01.png','banner_02.png','banner_03.png','banner_04.png'];
+				scope.bigTitleList = [{
+					cn:'数据即资产 不用即贬值',
+					bigcn:'全渠道零售下的商品数据服务',
+					en:'COMMODITY DATA SERVICES UNDER FULL CHANNEL RETAILING'
+				},{
+					cn:'权限管理 ▪ 多格式管理 ▪ 参数更新 ▪ 包装更新',
+					bigcn:'商品数据管理----建立你的云商品库',
+					en:'COMMODITY DATA MANAGEMENT - BUILD YOUR CLOUD PRODUCT LIBRARY'
+				},{
+					cn:'类目 ▪ 名称 ▪ 图片 ▪ 属性 ▪ 详情页',
+					bigcn:'商品数据一键全网同步',
+					en:'COMMODITY DATA A KEY TO THE WHOLE NETWORK SYNCHRONIZATION'
+				},{
+					cn:'商品采集流程化 ▪ 商品信息有序化 ▪ 项目实施专业化',
+					bigcn:'商品数据制作----成本效率最优化',
+					en:'COMMODITY DATA MAKING - COST EFFICIENCY OPTIMIZATION'
+				}];
 				var lunboInterval = 3000;
 				var t;
 				scope.lunbo = function(index){
 					clearTimeout(t);
 					scope.lunboIndex = index;
+					scope.bigTitle = scope.bigTitleList[scope.lunboIndex];
 					t = setInterval(function(){
 						scope.lunboIndex  = (scope.lunboIndex+1)%scope.imageList.length;
+						scope.bigTitle = scope.bigTitleList[scope.lunboIndex];
 						scope.$apply();
 					},lunboInterval);
 				};
